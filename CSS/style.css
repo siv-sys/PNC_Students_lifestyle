@@ -1,0 +1,1168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bg-color: black;
+    --secondary-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #212529;
+
+}
+
+.main-header {
+    height: 40px;
+    background: #343a40;
+    color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+#passer {
+    font-size: 24px;
+
+    transition: 0.3s ease;
+}
+
+#nume {
+    color: cyan;
+    transition: 0.3s ease;
+}
+
+#passer:hover {
+    color: #00ffee;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#nume:hover {
+    color: #00ffee;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn {
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.signup {
+    background: #00ffee;
+    color: #343a40;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #0b5ed7;
+
+}
+
+.signup:hover {
+    transform: scale(1.1);
+    background-color: #00d4cc;
+
+}
+
+.navbar {
+    display: flex;
+    height: 32px;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 16px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-left img{
+    height:56px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style-type: none;
+
+}
+.nav-right a i{
+    display: none;
+}
+.passerelles {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+
+}
+
+.passerelles p:first-child {
+    margin-bottom: -4px;
+}
+
+.passerelles p:last-child {
+    color: cyan;
+    margin-top: -2px;
+    font-size: 16px;
+}
+
+.nav-right a {
+    color: #343a40;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-right a:hover {
+    transform: scale(1.1);
+    color: #00ffee;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.li-btn {
+    background-color: #74d3cb;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.li-btn:hover {
+    transform: scale(1.1);
+    background-color: #004e4c;
+    cursor: pointer;
+}
+
+.home-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 38rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(https://www.passerellesnumeriques.org/wp-content/uploads/2024/06/Country-banner1.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.text-head {
+    display: flex;
+    gap: 8px;
+}
+
+.text-head h1:last-child {
+    color: cyan;
+}
+
+.text {
+
+    color: white;
+    font-size: 24px;
+    width: 70%;
+    margin-top: 24rem;
+    margin-left: -16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.text p:hover {
+    color: cyan;
+}
+
+.pn-values-sec {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+}
+
+.pn-values-sec h1 {
+    height: 100px;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pt-value, .pb-value {
+    height: 100px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pt-value{
+    margin-top: -24px;
+}
+.pb-value{
+    margin-top: -40px;
+}
+.pnc-values {
+    display: flex;
+    height: 100%;
+
+}
+
+.value-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card {
+    height: 10rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.space-card-1 {
+    margin-top: -12rem;
+
+}
+
+.space-card-2 {
+    margin-top: -20rem;
+}
+
+.card h2 {
+    color: white;
+}
+
+.card h2:hover {
+    color: cyan;
+}
+
+.script-card {
+    /* background: white; */
+    color: white;
+    border-radius: 16px;
+    height: 100%;
+    padding: 14px;
+    border: 3px solid cyan;
+    transition: 0.3s ease;
+}
+
+.script-card:hover {
+    transform: scale(1.1);
+}
+
+.value-middle {
+    width: 6px;
+    background: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.value-middle-bg {
+    width: 100%;
+    height: 88%;
+    background: cyan;
+    border-radius: 8px;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.point-1 {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: cyan;
+    margin-left: -19px;
+}
+
+.value-right {
+    flex: 1;
+    display: flex;
+}
+
+.the-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.space-card-3 {
+    margin-bottom: -2rem;
+}
+
+.space-card-4 {
+    margin-bottom: -8rem;
+}
+
+.space-card-3 h2 {
+    align-self: flex-end;
+
+}
+
+.space-card-4 h2 {
+    align-self: flex-end;
+
+}
+
+.canteen-sec {
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: white;
+    padding: 16px 32px;
+}
+
+.canteen-sec h1 {
+    height: 100px;
+    font-size: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pt-can, .pb-can {
+    height: 100px;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pb-can{
+    margin-top: -32px;
+    margin-bottom: 40px;
+}
+
+.foods-card {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.food-1,
+.food-2,
+.food-3,
+.food-4 {
+    flex: 1;
+    background: white;
+    border-radius: 16px;
+    border: 4px solid cyan;
+    position: relative;
+    overflow: hidden;
+}
+
+.food-1 img,
+.food-2 img,
+.food-3 img,
+.food-4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    display: block;
+    transition: tranform 0.5s;
+    display: block;
+    z-index: 1;
+}
+
+.hide-text {
+    color: white;
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 58%);
+    border-radius: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    transition: height 0.5s;
+    font-weight: normal;
+}
+.hide-text p{
+    margin-top: 12px;
+}
+
+.food-1:hover .hide-text {
+    height: 100%;
+    color: cyan;
+}
+
+.food-2:hover .hide-text {
+    height: 100%;
+    color: cyan;
+}
+
+.food-3:hover .hide-text {
+    height: 100%;
+    color: cyan;
+}
+
+.food-4:hover .hide-text {
+    height: 100%;
+    color: cyan;
+}
+
+.sports-sec {
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(/image/bgsport.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.sports-sec h1 {
+    height: 100px;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.sports-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.description-sport {
+    color: white;
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description-sport h2 {
+    margin-bottom: 16px;
+    font-size: 32px;
+    transition: 0.3s ease;
+}
+
+.description-sport h2:hover {
+    color: cyan;
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.p-sport p {
+    margin-bottom: l6px;
+    font-size: 24px;
+}
+
+.p-sport:hover {
+    color: rgb(136, 248, 248);
+    margin-bottom: l6px;
+    font-size: 24px;
+}
+
+.cards-sp {
+    flex: 1;
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    perspective: 1000px;
+}
+
+.card-sp {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    transform-style: preserve-3d;
+    position: transform 0.6s;
+    transition: 0.3s ease;
+    border: 3px solid white;
+}
+
+.card-sp:hover {
+    transform: scale(1.05);
+    box-shadow: cyan 0px 50px 80px -20px, cyan 0px 30px 60px -30px, cyan 0px -2px 6px 0px inset;
+}
+
+.image-sport-1,
+.image-sport-2,
+.image-sport-3,
+.image-sport-4,
+.sport-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 16px;
+    backface-visibility: hidden;
+}
+
+.image-sport-1,
+.image-sport-2,
+.image-sport-3,
+.image-sport-4 {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    transform: rotateY(0deg);
+}
+
+.image-sport-1 {
+    background-image: url(/image/1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-sport-2 {
+    background-image: url(/image/volleyball.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-sport-3 {
+    background-image: url(/image/backetball.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.image-sport-4 {
+    background-image: url(/image/tennis.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.sport-text {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.sport-text h2 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 12px;
+    transition: 0.1s ease;
+}
+
+.sport-text h2:hover {
+    color: teal;
+    font-size: 32px;
+    margin-bottom: 12px;
+    transform: scale(1.1);
+}
+
+.sport-text p {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.cards-sp:hover .card-sp {
+    transform: rotateY(180deg);
+}
+
+.aerobic-sec {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px 32px 32px;
+}
+
+.aerobic-sec h1 {
+    height: 100px;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pt-aero, .pb-aero {
+    height: 100px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pt-aero{
+    margin-top: -52px;
+}
+.pb-aero{
+    margin-top: -72px;
+}
+.aerobic-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+    gap: 24px;
+}
+
+.cards-aero {
+    flex: 1;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.card-aero {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 16px;
+    transition: 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    color: white;
+    background: none;
+}
+
+.card-aero:hover {
+    transform: scale(1.05);
+    background: white;
+    color: black;
+    border: 4px solid cyan;
+}
+.image-above-1{
+    height: 60%;
+    background-image: url(/image/aerobic-1.png);
+    background-position:center;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+.image-above-2{
+    height: 60%;
+    background-image: url(/image/aerobic-1.png);
+    background-position:center;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+.image-above-3{
+    height: 60%;
+    background-image: url(/image/aero-project.png);
+    background-position:center;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+.hide-text-aero{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hide-text-aero h2{
+    transition: 0.3s ease;
+    margin-top: 16px;
+}
+.hide-text-aero h2:hover{
+    color: cyan;
+    transform: scale(1.1);
+}
+.hide-text-aero p{
+    text-align: center;
+    padding: 20px;
+}
+.map-sec{
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    background: white;
+}
+.map-sec h1 {
+    height: 100px;
+    font-size: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.pt, .pb {
+    height: 100px;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pb{
+    margin-top: -32px;
+}
+.map-full-card{
+    flex: 1;
+    color: black;
+    display: flex;
+    padding-top: 80px;
+}
+.card-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.card-left h2{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.card-left h2:hover{
+    color: cyan;
+}
+.card-left p{
+    font-size: 20px;
+    margin-right: 80px;
+}
+.card-left p:hover{
+    color: rgb(0, 182, 182);
+}
+.card-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-right iframe{
+    border-radius: 16px;
+}
+.contact-sec{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(https://www.shutterstock.com/image-photo/using-computerhand-typing-keyboard-laptop-600nw-1774949384.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.contact-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact-card h1{
+    height: 100px;
+    font-size: 56px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-card span{
+    color: cyan;
+    margin-left: 12px;
+}
+.form-content{
+    display: flex;
+    width: 90%;;
+    height: 80%;
+    gap: 80px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+}
+.form-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form-left input{
+    width: 96%;
+    padding: 28px 0;
+    padding-left: 28px;
+    border-radius: 14px;
+    border: none;
+    font-size: 24px;
+    background: none;
+    outline: none;
+    border: 4px solid cyan;
+}
+.form-right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+.message{
+    height: 18rem;
+    width: 100%;
+    border-radius: 14px;
+    padding: 28px;
+    font-size: 22px;
+    background: none;
+    border: 4px solid cyan;
+    
+}
+::placeholder{
+    color: cyan;
+}
+.con-btn{
+    padding: 18px 56px;
+    border-radius: 32px;
+    font-size: 22px;
+    border: none;
+    background: cyan;
+    transition: 0.4s ease;
+    /* box-shadow: rgba(0, 255, 255, 0.514) 0px 50px 100px -20px, rgba(0, 255, 255, 0.514) 0px 30px 60px -30px, rgba(0, 255, 255, 0.514) 0px -2px 6px 0px inset; */
+    box-shadow: rgba(0, 255, 255, 0.514) 0px 54px 55px, rgba(0, 255, 255, 0.514) 0px -12px 30px, rgba(0, 255, 255, 0.514) 0px 4px 6px, rgba(0, 255, 255, 0.514) 0px 12px 13px, rgba(0, 255, 255, 0.514) 0px -3px 5px;   
+}
+.con-btn:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+input:focus, input:valid{
+    color: white;
+}
+textarea:focus, textarea:valid{
+    color: white;
+    outline: none;
+    font-size: 24px;
+}
+.footer-content {
+    height: 30rem;
+    display: flex;
+    background: #131313;
+    flex-direction: column;
+    padding: 16px 32px 32px 32px;
+}
+.social-icon{
+    height: 4rem;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    border: 2px solid cyan;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s ease;
+}
+.icon i{
+    font-size: 36px;
+    color: cyan;
+}
+.icon i:hover{
+    color: black;
+}
+.icon:hover{
+    transform: scale(1.2);
+    background: cyan;
+    box-shadow: cyan 0px 7px 29px 0px;
+}
+.summary{
+    height: 20rem;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.summary a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.summary a:hover{
+    color: cyan;
+    display: inline-block;
+    padding: 50px;
+}
+.c{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.copy-right{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+
+/* __________Responsive__________ */
+@media (max-width:360px){
+
+    .main-header{
+        height: 24px;
+        font-size: 12px;
+        padding: 16px;
+    }
+    .header-right{
+        gap: 8px;
+    }
+    #passer{
+        font-size: 16px;
+    }
+    .btn{
+        padding: 4px 16px;
+    }
+    .navbar{
+        height: 24px;
+        padding: 16px;
+    }
+    .nav-left img{
+        height: 40px;
+    }
+    .passerelles{
+        display: none;
+    }
+    .nav-right{
+        gap: 8px;
+    }
+    .nav-right a i{
+        display: block;
+    }
+    .nav-right a span{
+        display: none;
+    }
+    .li-btn{
+        font-size: 12px;
+        padding: 4px ;
+    }
+    .text{
+        margin-right: -200px;
+        margin-top: 24rem;
+    }
+    .text h1{
+        font-size: 24px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    .pn-values-sec{
+        padding: 32px 16px;
+        height: 140vh;
+    }
+    .pn-values-sec h1{
+        font-size: 20px;
+    }
+    .pt-value, .pb-value, .pt-aero,.pt-can, .pb-aero, .pb-can{
+        font-size: 16px;
+        text-align: center;
+    }
+    .pt-value, .pt-aero,.pt-can{
+        margin-bottom: 30px;
+    }
+    .pnc-values{
+        display: flex;
+        flex-direction: column; 
+    }
+    .value-left{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .value-middle{
+        display: none;
+    }
+    .point{
+        display: none;
+    }
+    .value-right{
+        margin-top: 0;
+        padding: 0;
+    }
+    .card{
+        padding: 0;
+        margin: 0;
+    }
+    .card h2{
+        align-self: flex-start;
+    }
+    .script-card:hover{
+        background: white;
+    }
+    .script-card p:hover{
+        color: black;
+    }
+    .canteen-sec{
+        padding: 4px 16px 16px 16px;
+        height: 400vh;
+    }
+    .canteen-sec h1{
+        font-size: 20px;
+    }
+    .foods-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .sports-sec{
+        padding: 4px 16px 32px 16px;
+        height: 200vh;
+    }
+    .sports-sec h1{
+        font-size: 20px;
+    }
+    .description-sport{
+        display: none;
+    }
+    .cards-sp{
+        display: flex;
+        flex-direction: column;
+    }
+    .aerobic-sec{
+        padding: 32px 16px;
+        height: 300vh;
+    }
+    .aerobic-sec h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .cards-aero{
+        display: flex;
+        flex-direction: column;
+    }
+    .map-sec{
+        padding: 32px 16px;
+        height: 104vh;
+    }
+    .map-sec h1{
+        font-size: 24px;
+        height: 0px;
+        margin: 0;
+        padding: 0;
+    }
+    .map-sec .pt, .map-sec .pb{
+        display: none;
+    }
+    .map-full-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-left{
+        padding: 0;
+        margin-top: 0;
+    }
+    .card-left h2{
+        font-size: 20px;
+    }
+    .contact-sec{
+        padding: 32px;
+        height: 130vh;
+    }
+    .card-left p{
+        font-size: 16px;
+    }
+    .contact-card h1{
+        font-size: 24px;
+    }
+    .form-content{
+        display: flex;
+        flex-direction: column  ;
+        gap: 0px;
+    }
+    .form-left{
+        margin-left: -30px;
+    }
+    .form-left input{
+        padding: 16px;
+    }
+    .copy-right{
+        font-size: 16px;
+    }
+    .c{
+        height: 10px;
+        width: 10px;
+        font-size: 8px;
+    }
+
+
+}
