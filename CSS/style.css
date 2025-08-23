@@ -4,11 +4,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 
 :root {
     --bg-color: black;
     --secondary-bg-color: #131313;
     --text-color: white;
     --main-color: #00ffee;
+} */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -103,6 +107,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: white;
+    box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3);
     padding: 16px 32px;
     position: sticky;
     top: 0;
@@ -113,9 +118,11 @@ body {
     display: flex;
     align-items: center;
 }
-.nav-left img{
-    height:56px;
+
+.nav-left img {
+    height: 56px;
 }
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -123,9 +130,11 @@ body {
     list-style-type: none;
 
 }
-.nav-right a i{
+
+.nav-right a i {
     display: none;
 }
+
 .passerelles {
     display: flex;
     flex-direction: column;
@@ -141,6 +150,18 @@ body {
     color: cyan;
     margin-top: -2px;
     font-size: 16px;
+}
+
+.passerelles a {
+    text-decoration: none;
+}
+
+.passerelles a p:first-child {
+    color: black;
+}
+
+.passerelles a p:nth-child(2) {
+    color: black;
 }
 
 .nav-right a {
@@ -227,7 +248,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-.pt-value, .pb-value {
+
+.pt-value,
+.pb-value {
     height: 100px;
     font-size: 20px;
     color: white;
@@ -236,12 +259,15 @@ body {
     justify-content: center;
 
 }
-.pt-value{
+
+.pt-value {
     margin-top: -24px;
 }
-.pb-value{
+
+.pb-value {
     margin-top: -40px;
 }
+
 .pnc-values {
     display: flex;
     height: 100%;
@@ -376,7 +402,8 @@ body {
     margin-top: 40px;
 }
 
-.pt-can, .pb-can {
+.pt-can,
+.pb-can {
     height: 100px;
     font-size: 20px;
     color: black;
@@ -385,7 +412,8 @@ body {
     justify-content: center;
 
 }
-.pb-can{
+
+.pb-can {
     margin-top: -32px;
     margin-bottom: 40px;
 }
@@ -441,7 +469,8 @@ body {
     transition: height 0.5s;
     font-weight: normal;
 }
-.hide-text p{
+
+.hide-text p {
     margin-top: 12px;
 }
 
@@ -559,6 +588,7 @@ body {
     height: 100%;
     position: absolute;
     border-radius: 16px;
+    text-align: center;
     backface-visibility: hidden;
 }
 
@@ -648,7 +678,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-.pt-aero, .pb-aero {
+
+.pt-aero,
+.pb-aero {
     height: 100px;
     font-size: 20px;
     color: white;
@@ -657,12 +689,15 @@ body {
     justify-content: center;
 
 }
-.pt-aero{
+
+.pt-aero {
     margin-top: -52px;
 }
-.pb-aero{
+
+.pb-aero {
     margin-top: -72px;
 }
+
 .aerobic-card {
     flex: 1;
     display: flex;
@@ -697,53 +732,62 @@ body {
     color: black;
     border: 4px solid cyan;
 }
-.image-above-1{
-    height: 60%;
+
+.image-above-1 {
+    height: 57%;
     background-image: url(/image/aerobic-1.png);
-    background-position:center;
+    background-position: center;
     background-size: cover;
     border-radius: 16px 16px 0 0;
 }
-.image-above-2{
+
+.image-above-2 {
     height: 60%;
-    background-image: url(/image/aerobic-1.png);
-    background-position:center;
+    background-image: url(/image/image.png);
+    background-position: center;
     background-size: cover;
     border-radius: 16px 16px 0 0;
 }
-.image-above-3{
+
+.image-above-3 {
     height: 60%;
     background-image: url(/image/aero-project.png);
-    background-position:center;
+    background-position: center;
     background-size: cover;
     border-radius: 16px 16px 0 0;
 }
-.hide-text-aero{
+
+.hide-text-aero {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.hide-text-aero h2{
+
+.hide-text-aero h2 {
     transition: 0.3s ease;
     margin-top: 16px;
 }
-.hide-text-aero h2:hover{
+
+.hide-text-aero h2:hover {
     color: cyan;
     transform: scale(1.1);
 }
-.hide-text-aero p{
+
+.hide-text-aero p {
     text-align: center;
     padding: 20px;
 }
-.map-sec{
+
+.map-sec {
     height: 45rem;
     display: flex;
     flex-direction: column;
     padding: 16px 32px;
     background: white;
 }
+
 .map-sec h1 {
     height: 100px;
     font-size: 40px;
@@ -753,7 +797,9 @@ body {
     justify-content: center;
     margin-top: 40px;
 }
-.pt, .pb {
+
+.pt,
+.pb {
     height: 100px;
     font-size: 20px;
     color: black;
@@ -762,63 +808,75 @@ body {
     justify-content: center;
 
 }
-.pb{
+
+.pb {
     margin-top: -32px;
 }
-.map-full-card{
+
+.map-full-card {
     flex: 1;
     color: black;
     display: flex;
     padding-top: 80px;
 }
-.card-left{
+
+.card-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
-.card-left h2{
+
+.card-left h2 {
     font-size: 40px;
     margin-bottom: 16px;
 }
-.card-left h2:hover{
+
+.card-left h2:hover {
     color: cyan;
 }
-.card-left p{
+
+.card-left p {
     font-size: 20px;
     margin-right: 80px;
 }
-.card-left p:hover{
+
+.card-left p:hover {
     color: rgb(0, 182, 182);
 }
-.card-right{
+
+.card-right {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card-right iframe{
+
+.card-right iframe {
     border-radius: 16px;
 }
-.contact-sec{
+
+.contact-sec {
     height: 40rem;
     display: flex;
     flex-direction: column;
     padding: 16px 32px;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(https://www.shutterstock.com/image-photo/using-computerhand-typing-keyboard-laptop-600nw-1774949384.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(https://www.shutterstock.com/image-photo/using-computerhand-typing-keyboard-laptop-600nw-1774949384.jpg);
     background-position: center;
     background-size: cover;
     object-fit: cover;
 }
-.contact-card{
+
+.contact-card {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.contact-card h1{
+
+.contact-card h1 {
     height: 100px;
     font-size: 56px;
     color: white;
@@ -826,25 +884,30 @@ body {
     align-items: center;
     justify-content: center;
 }
-.contact-card span{
+
+.contact-card span {
     color: cyan;
     margin-left: 12px;
 }
-.form-content{
+
+.form-content {
     display: flex;
-    width: 90%;;
+    width: 90%;
+    ;
     height: 80%;
     gap: 80px;
     padding-top: 40px;
     padding-bottom: 32px;
 }
-.form-left{
+
+.form-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.form-left input{
+
+.form-left input {
     width: 96%;
     padding: 28px 0;
     padding-left: 28px;
@@ -855,14 +918,16 @@ body {
     outline: none;
     border: 4px solid cyan;
 }
-.form-right{
-    flex:1;
+
+.form-right {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 22px;
 }
-.message{
+
+.message {
     height: 18rem;
     width: 100%;
     border-radius: 14px;
@@ -870,12 +935,14 @@ body {
     font-size: 22px;
     background: none;
     border: 4px solid cyan;
-    
+
 }
-::placeholder{
+
+::placeholder {
     color: cyan;
 }
-.con-btn{
+
+.con-btn {
     padding: 18px 56px;
     border-radius: 32px;
     font-size: 22px;
@@ -883,20 +950,26 @@ body {
     background: cyan;
     transition: 0.4s ease;
     /* box-shadow: rgba(0, 255, 255, 0.514) 0px 50px 100px -20px, rgba(0, 255, 255, 0.514) 0px 30px 60px -30px, rgba(0, 255, 255, 0.514) 0px -2px 6px 0px inset; */
-    box-shadow: rgba(0, 255, 255, 0.514) 0px 54px 55px, rgba(0, 255, 255, 0.514) 0px -12px 30px, rgba(0, 255, 255, 0.514) 0px 4px 6px, rgba(0, 255, 255, 0.514) 0px 12px 13px, rgba(0, 255, 255, 0.514) 0px -3px 5px;   
+    box-shadow: rgba(0, 255, 255, 0.514) 0px 54px 55px, rgba(0, 255, 255, 0.514) 0px -12px 30px, rgba(0, 255, 255, 0.514) 0px 4px 6px, rgba(0, 255, 255, 0.514) 0px 12px 13px, rgba(0, 255, 255, 0.514) 0px -3px 5px;
 }
-.con-btn:hover{
+
+.con-btn:hover {
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-input:focus, input:valid{
+
+input:focus,
+input:valid {
     color: white;
 }
-textarea:focus, textarea:valid{
+
+textarea:focus,
+textarea:valid {
     color: white;
     outline: none;
     font-size: 24px;
 }
+
 .footer-content {
     height: 30rem;
     display: flex;
@@ -904,14 +977,16 @@ textarea:focus, textarea:valid{
     flex-direction: column;
     padding: 16px 32px 32px 32px;
 }
-.social-icon{
+
+.social-icon {
     height: 4rem;
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
 }
-.icon{
+
+.icon {
     border: 2px solid cyan;
     height: 56px;
     width: 56px;
@@ -921,19 +996,23 @@ textarea:focus, textarea:valid{
     align-items: center;
     transition: 0.6s ease;
 }
-.icon i{
+
+.icon i {
     font-size: 36px;
     color: cyan;
 }
-.icon i:hover{
+
+.icon i:hover {
     color: black;
 }
-.icon:hover{
+
+.icon:hover {
     transform: scale(1.2);
     background: cyan;
     box-shadow: cyan 0px 7px 29px 0px;
 }
-.summary{
+
+.summary {
     height: 20rem;
     font-size: 24px;
     display: flex;
@@ -942,17 +1021,20 @@ textarea:focus, textarea:valid{
     align-items: center;
     gap: 12px;
 }
-.summary a{
+
+.summary a {
     text-decoration: none;
     color: white;
     transition: 0.3s ease-in-out;
 }
-.summary a:hover{
+
+.summary a:hover {
     color: cyan;
     display: inline-block;
     padding: 50px;
 }
-.c{
+
+.c {
     height: 20px;
     width: 20px;
     display: flex;
@@ -964,7 +1046,8 @@ textarea:focus, textarea:valid{
     border-radius: 50%;
     margin-right: 4px;
 }
-.copy-right{
+
+.copy-right {
     width: 100%;
     height: 4rem;
     display: flex;
@@ -976,193 +1059,344 @@ textarea:focus, textarea:valid{
 
 
 /* __________Responsive__________ */
-@media (max-width:360px){
+@media (max-width:360px) and (min-width:300px) {
 
-    .main-header{
+    .main-header {
         height: 24px;
         font-size: 12px;
         padding: 16px;
     }
-    .header-right{
+
+    .header-right {
         gap: 8px;
     }
-    #passer{
+
+    #passer {
         font-size: 16px;
     }
-    .btn{
+
+    .btn {
         padding: 4px 16px;
     }
-    .navbar{
+
+    .navbar {
         height: 24px;
         padding: 16px;
     }
-    .nav-left img{
+
+    .nav-left img {
         height: 40px;
     }
-    .passerelles{
+
+    .passerelles {
         display: none;
     }
-    .nav-right{
+
+    .nav-right {
         gap: 8px;
     }
-    .nav-right a i{
+
+    .nav-right a i {
         display: block;
     }
-    .nav-right a span{
+
+    .nav-right a span {
         display: none;
     }
-    .li-btn{
+
+    .li-btn {
         font-size: 12px;
-        padding: 4px ;
+        padding: 4px;
     }
-    .text{
+
+    .text {
         margin-right: -200px;
         margin-top: 24rem;
     }
-    .text h1{
+
+    .text h1 {
         font-size: 24px;
     }
-    .text p{
+
+    .text p {
         font-size: 16px;
     }
-    .pn-values-sec{
+
+    .pn-values-sec {
         padding: 32px 16px;
         height: 140vh;
     }
-    .pn-values-sec h1{
+
+    .pn-values-sec h1 {
         font-size: 20px;
     }
-    .pt-value, .pb-value, .pt-aero,.pt-can, .pb-aero, .pb-can{
+
+    .pt-value,
+    .pb-value,
+    .pt-aero,
+    .pt-can,
+    .pb-aero,
+    .pb-can {
         font-size: 16px;
         text-align: center;
     }
-    .pt-value, .pt-aero,.pt-can{
+
+    .pt-value,
+    .pt-aero,
+    .pt-can {
         margin-bottom: 30px;
     }
-    .pnc-values{
+
+    .pnc-values {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
-    .value-left{
+
+    .value-left {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
-        
+
     }
-    .value-middle{
+
+    .value-middle {
         display: none;
     }
-    .point{
+
+    .point {
         display: none;
     }
-    .value-right{
+
+    .value-right {
         margin-top: 0;
         padding: 0;
     }
-    .card{
+
+    .card {
         padding: 0;
         margin: 0;
     }
-    .card h2{
+
+    .card h2 {
         align-self: flex-start;
     }
-    .script-card:hover{
+
+    .script-card:hover {
         background: white;
     }
-    .script-card p:hover{
+
+    .script-card p:hover {
         color: black;
     }
-    .canteen-sec{
+
+    .canteen-sec {
         padding: 4px 16px 16px 16px;
         height: 400vh;
     }
-    .canteen-sec h1{
+
+    .canteen-sec h1 {
         font-size: 20px;
     }
-    .foods-card{
+
+    .foods-card {
         display: flex;
         flex-direction: column;
     }
-    .sports-sec{
+
+    .sports-sec {
         padding: 4px 16px 32px 16px;
         height: 200vh;
     }
-    .sports-sec h1{
+
+    .sports-sec h1 {
         font-size: 20px;
     }
-    .description-sport{
+
+    .description-sport {
         display: none;
     }
-    .cards-sp{
+
+    .cards-sp {
         display: flex;
         flex-direction: column;
     }
-    .aerobic-sec{
+
+    .aerobic-sec {
         padding: 32px 16px;
         height: 300vh;
     }
-    .aerobic-sec h1{
+
+    .aerobic-sec h1 {
         font-size: 20px;
         margin-bottom: 10px;
     }
-    .cards-aero{
+
+    .cards-aero {
         display: flex;
         flex-direction: column;
     }
-    .map-sec{
+
+    .map-sec {
         padding: 32px 16px;
         height: 104vh;
     }
-    .map-sec h1{
+
+    .map-sec h1 {
         font-size: 24px;
         height: 0px;
         margin: 0;
         padding: 0;
     }
-    .map-sec .pt, .map-sec .pb{
+
+    .map-sec .pt,
+    .map-sec .pb {
         display: none;
     }
-    .map-full-card{
+
+    .map-full-card {
         display: flex;
         flex-direction: column;
     }
-    .card-left{
+
+    .card-left {
         padding: 0;
         margin-top: 0;
     }
-    .card-left h2{
+
+    .card-left h2 {
         font-size: 20px;
     }
-    .contact-sec{
+
+    .contact-sec {
         padding: 32px;
         height: 130vh;
     }
-    .card-left p{
+
+    .card-left p {
         font-size: 16px;
     }
-    .contact-card h1{
+
+    .contact-card h1 {
         font-size: 24px;
     }
-    .form-content{
+
+    .form-content {
         display: flex;
-        flex-direction: column  ;
+        flex-direction: column;
         gap: 0px;
     }
-    .form-left{
+
+    .form-left {
         margin-left: -30px;
     }
-    .form-left input{
+
+    .form-left input {
         padding: 16px;
     }
-    .copy-right{
+
+    .copy-right {
         font-size: 16px;
     }
-    .c{
+
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .icon i {
+        font-size: 24px;
+    }
+
+    .c {
         height: 10px;
         width: 10px;
         font-size: 8px;
     }
 
+
+}
+
+@media (max-width:800px) and (min-width:700px) {
+    .passerelles {
+        display: none;
+    }
+
+    .home-sec {
+        padding: 32px;
+    }
+
+    .pn-values-sec {
+        padding: 32px;
+        height: 70vh;
+    }
+
+    .pt-value,
+    .pb-value,
+    .pt-aero,
+    .pt-can,
+    .pb-aero,
+    .pb-can {
+        text-align: center;
+    }
+
+    .pb-value {
+        margin-top: -32px;
+    }
+
+    .canteen-sec {
+        padding: 32px;
+        height: 56vh;
+    }
+
+    .pb-can {
+        margin-top: -24px;
+    }
+
+    .sports-sec {
+        padding: 32px;
+        height: 64vh;
+    }
+    .sport-text h2{
+        font-size: 24px;
+    }
+    .cards-sp{
+        gap: 12px;
+    }
+    .description-sport{
+        padding: 0;
+        margin: 0;
+        height: 24vh;
+    }
+    .card-aero{
+        height: 60vh;
+    }
+    .aerobic-sec{
+        padding: 32px;
+        height: 80vh;
+    }
+    .image-above-1, .image-above-3{
+        height: 29.9vh;
+    }
+    .pb-aero{
+        margin-top: -48px;
+    }
+    .map-sec{
+        height: 80vh;
+    }
+    .pb{
+        margin-top: -48px;
+        text-align: center;
+    }
+    .map-full-card{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .card-right iframe{
+        width: 100%;
+        padding-bottom: 32px;
+        border-radius: 16px;
+    }
 
 }
