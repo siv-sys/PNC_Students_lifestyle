@@ -1059,7 +1059,7 @@ textarea:valid {
 
 
 /* __________Responsive__________ */
-@media (max-width:360px) and (min-width:300px) {
+@media (max-width:450px) and (min-width:300px) {
 
     .main-header {
         height: 24px;
